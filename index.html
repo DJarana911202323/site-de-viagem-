@@ -1,62 +1,318 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viagem para Taiwan</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agência Viajante — Explore o Mundo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Descubra Taiwan</h1>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#lugares">Lugares</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=40&q=60" alt="logo" class="logo">
+        <h1>Agência Viajante</h1>
+      </div>
+      <nav class="main-nav">
+        <a href="#destinos">Destinos</a>
+        <a href="#pacotes">Pacotes</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato" class="btn-outline">Contato</a>
+      </nav>
+      <button class="menu-btn" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
 
-    <section id="banner">
-        <h2>Explore a Ilha Formosa</h2>
-        <p>Cultura, natureza e tecnologia em um só lugar!</p>
-    </section>
+  <main>
+    <section class="hero">
+      <div class="hero-inner container">
+        <div class="hero-copy">
+          <h2>Explore o mundo com segurança e estilo</h2>
+          <p>Passagens, pacotes personalizados e atendimento especializado. Sua próxima aventura começa aqui.</p>
 
-    <section id="sobre">
-        <h2>Sobre Taiwan</h2>
-        <p>Taiwan é uma ilha situada na Ásia Oriental, conhecida por suas montanhas, templos e cidades modernas como Taipei. É o destino perfeito para quem busca aventura e cultura.</p>
-    </section>
-
-    <section id="lugares">
-        <h2>Lugares Incríveis</h2>
-        <div class="cards">
-            <div class="card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Taipei_101_2019.jpg/640px-Taipei_101_2019.jpg" alt="Taipei 101">
-                <h3>Taipei 101</h3>
-                <p>Um dos arranha-céus mais altos do mundo, com vista panorâmica da capital.</p>
-            </div>
-            <div class="card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Taroko_Gorge.JPG/640px-Taroko_Gorge.JPG" alt="Taroko Gorge">
-                <h3>Garganta de Taroko</h3>
-                <p>Desfiladeiros incríveis e trilhas deslumbrantes na natureza.</p>
-            </div>
-            <div class="card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Sun_Moon_Lake_view.jpg/640px-Sun_Moon_Lake_view.jpg" alt="Lago Sol e Lua">
-                <h3>Lago Sol e Lua</h3>
-                <p>Um dos pontos turísticos mais belos e tranquilos do país.</p>
-            </div>
+          <form class="search-form" aria-label="Busca de destinos">
+            <input type="text" placeholder="Procure um destino (ex: Paris, Fernando de Noronha)" aria-label="destino">
+            <select aria-label="tipo">
+              <option>Pacote</option>
+              <option>Passagem</option>
+              <option>Hotel</option>
+            </select>
+            <button type="submit" class="btn-primary">Buscar</button>
+          </form>
         </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=60" alt="praia"/>
+        </div>
+      </div>
     </section>
 
-    <section id="contato">
-        <h2>Fale Conosco</h2>
-        <p>Email: contato@viagemtaiwan.com</p>
-        <p>Instagram: @viagemtaiwan</p>
+    <section id="destinos" class="section container">
+      <h3>Destinos em destaque</h3>
+      <div class="grid">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?auto=format&fit=crop&w=800&q=60" alt="Itália">
+          <div class="card-body">
+            <h4>Itália - Roteiro cultural</h4>
+            <p>7 dias por Roma, Florença e Veneza.</p>
+            <a class="btn-link" href="#">Ver pacote</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1470115636492-6d2b56f91479?auto=format&fit=crop&w=800&q=60" alt="Maldivas">
+          <div class="card-body">
+            <h4>Maldivas - Paraíso</h4>
+            <p>Resorts e passeios aquáticos com tudo incluso.</p>
+            <a class="btn-link" href="#">Ver pacote</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1506898662795-0a4f1e6d1a2b?auto=format&fit=crop&w=800&q=60" alt="Brasil">
+          <div class="card-body">
+            <h4>Brasil - Destinos imperdíveis</h4>
+            <p>De praias a serras: opções para todos os gostos.</p>
+            <a class="btn-link" href="#">Ver pacote</a>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Viagem Taiwan. Todos os direitos reservados.</p>
-    </footer>
+    <section id="pacotes" class="section alt">
+      <div class="container">
+        <h3>Pacotes personalizáveis</h3>
+        <p class="muted">Montamos pacotes sob medida com base no seu estilo de viagem.</p>
+        <div class="features">
+          <div class="feature">
+            <h4>Consultoria 24/7</h4>
+            <p>Suporte antes, durante e depois da viagem.</p>
+          </div>
+          <div class="feature">
+            <h4>Parcelamento facilitado</h4>
+            <p>Opções de pagamento em até 12x sem juros.</p>
+          </div>
+          <div class="feature">
+            <h4>Experiências locais</h4>
+            <p>Guias e passeios exclusivos organizados por nós.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section container">
+      <div class="about-inner">
+        <img class="about-img" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=60" alt="equipe">
+        <div>
+          <h3>Sobre a Agência Viajante</h3>
+          <p>Somos uma equipe apaixonada por viagens com foco em planejamento responsável e experiências autênticas. Acreditamos que viajar transforma pessoas.</p>
+          <a href="#contato" class="btn-outline">Fale conosco</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <h3>Depoimentos</h3>
+      <div class="testimonials">
+        <blockquote>
+          "A viagem foi perfeita — tudo organizado e sem imprevistos."<cite>— Marina, SP</cite>
+        </blockquote>
+        <blockquote>
+          "Atendimento impecável e sugestões que fizeram a diferença."<cite>— Carlos, RJ</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="contato" class="section alt contact container">
+      <h3>Contato</h3>
+      <p>Quer um orçamento ou tem dúvidas? Envie uma mensagem.</p>
+      <form class="contact-form">
+        <input type="text" placeholder="Seu nome" required>
+        <input type="email" placeholder="Seu email" required>
+        <textarea placeholder="Sua mensagem" rows="4" required></textarea>
+        <button class="btn-primary">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Agência Viajante — Todos os direitos reservados</p>
+      <small class="muted">Endereço fictício • (11) 99999-9999 • contato@agenciaviajante.com</small>
+    </div>
+  </footer>
+
+  <script>
+    // ano do rodapé
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // menu mobile simples
+    const btn = document.querySelector('.menu-btn');
+    const nav = document.querySelector('.main-nav');
+    btn.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agência Viajante — Explore o Mundo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=40&q=60" alt="logo" class="logo">
+        <h1>Agência Viajante</h1>
+      </div>
+      <nav class="main-nav">
+        <a href="#destinos">Destinos</a>
+        <a href="#pacotes">Pacotes</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato" class="btn-outline">Contato</a>
+      </nav>
+      <button class="menu-btn" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner container">
+        <div class="hero-copy">
+          <h2>Explore o mundo com segurança e estilo</h2>
+          <p>Passagens, pacotes personalizados e atendimento especializado. Sua próxima aventura começa aqui.</p>
+
+          <form class="search-form" aria-label="Busca de destinos">
+            <input type="text" placeholder="Procure um destino (ex: Paris, Fernando de Noronha)" aria-label="destino">
+            <select aria-label="tipo">
+              <option>Pacote</option>
+              <option>Passagem</option>
+              <option>Hotel</option>
+            </select>
+            <button type="submit" class="btn-primary">Buscar</button>
+          </form>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=60" alt="praia"/>
+        </div>
+      </div>
+    </section>
+
+    <section id="destinos" class="section container">
+      <h3>Destinos em destaque</h3>
+      <div class="grid">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?auto=format&fit=crop&w=800&q=60" alt="Itália">
+          <div class="card-body">
+            <h4>Itália - Roteiro cultural</h4>
+            <p>7 dias por Roma, Florença e Veneza.</p>
+            <a class="btn-link" href="#">Ver pacote</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1470115636492-6d2b56f91479?auto=format&fit=crop&w=800&q=60" alt="Maldivas">
+          <div class="card-body">
+            <h4>Maldivas - Paraíso</h4>
+            <p>Resorts e passeios aquáticos com tudo incluso.</p>
+            <a class="btn-link" href="#">Ver pacote</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1506898662795-0a4f1e6d1a2b?auto=format&fit=crop&w=800&q=60" alt="Brasil">
+          <div class="card-body">
+            <h4>Brasil - Destinos imperdíveis</h4>
+            <p>De praias a serras: opções para todos os gostos.</p>
+            <a class="btn-link" href="#">Ver pacote</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="pacotes" class="section alt">
+      <div class="container">
+        <h3>Pacotes personalizáveis</h3>
+        <p class="muted">Montamos pacotes sob medida com base no seu estilo de viagem.</p>
+        <div class="features">
+          <div class="feature">
+            <h4>Consultoria 24/7</h4>
+            <p>Suporte antes, durante e depois da viagem.</p>
+          </div>
+          <div class="feature">
+            <h4>Parcelamento facilitado</h4>
+            <p>Opções de pagamento em até 12x sem juros.</p>
+          </div>
+          <div class="feature">
+            <h4>Experiências locais</h4>
+            <p>Guias e passeios exclusivos organizados por nós.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section container">
+      <div class="about-inner">
+        <img class="about-img" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=60" alt="equipe">
+        <div>
+          <h3>Sobre a Agência Viajante</h3>
+          <p>Somos uma equipe apaixonada por viagens com foco em planejamento responsável e experiências autênticas. Acreditamos que viajar transforma pessoas.</p>
+          <a href="#contato" class="btn-outline">Fale conosco</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <h3>Depoimentos</h3>
+      <div class="testimonials">
+        <blockquote>
+          "A viagem foi perfeita — tudo organizado e sem imprevistos."<cite>— Marina, SP</cite>
+        </blockquote>
+        <blockquote>
+          "Atendimento impecável e sugestões que fizeram a diferença."<cite>— Carlos, RJ</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="contato" class="section alt contact container">
+      <h3>Contato</h3>
+      <p>Quer um orçamento ou tem dúvidas? Envie uma mensagem.</p>
+      <form class="contact-form">
+        <input type="text" placeholder="Seu nome" required>
+        <input type="email" placeholder="Seu email" required>
+        <textarea placeholder="Sua mensagem" rows="4" required></textarea>
+        <button class="btn-primary">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Agência Viajante — Todos os direitos reservados</p>
+      <small class="muted">Endereço fictício • (11) 99999-9999 • contato@agenciaviajante.com</small>
+    </div>
+  </footer>
+
+  <script>
+    // ano do rodapé
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // menu mobile simples
+    const btn = document.querySelector('.menu-btn');
+    const nav = document.querySelector('.main-nav');
+    btn.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
